@@ -19,7 +19,7 @@ import java.util.Optional;
 @Slf4j
 @RequiredArgsConstructor
 @Service
-public class KoatuuImporterFacade {
+public class KoatuuFacade {
     private final KoatuuProperties properties;
 
     private final KoatuuLoader koatuuLoader;

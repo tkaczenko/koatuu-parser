@@ -1,6 +1,6 @@
 package io.github.tkaczenko.koatuuparser;
 
-import io.github.tkaczenko.koatuuparser.service.KoatuuImporterFacade;
+import io.github.tkaczenko.koatuuparser.service.KoatuuFacade;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 @RequiredArgsConstructor
 @SpringBootApplication
 public class KoatuuParserApplication {
-    private final KoatuuImporterFacade koatuuImporterFacade;
+    private final KoatuuFacade koatuuFacade;
 
     public static void main(String[] args) {
         SpringApplication.run(KoatuuParserApplication.class, args);
@@ -27,7 +27,7 @@ public class KoatuuParserApplication {
             String destination = args.length >= 1 ? args[0] : null;
             String url = args.length >= 2 ? args[1] : null;
             String fileName = args.length >= 3 ? args[2] : null;
-            koatuuImporterFacade.parse(url, destination, fileName);
+            koatuuFacade.parse(url, destination, fileName);
         };
     }
 }
