@@ -1,0 +1,14 @@
+koatuu:
+  defaultUrl: http://www.ukrstat.gov.ua/klasf/st_kls/koatuu.zip
+  defaultFileName: KOATUU_02032020.xls
+
+jooq:
+  sql:
+    dialect: POSTGRES
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: db
+    password: db
+    driver-class-name: org.postgresql.Driver
