@@ -25,7 +25,7 @@ where is:
 2. Parse specified file from extracted zip to objects ([LocationDTO](/src/main/java/io/github/tkaczenko/koatuuparser/model/local/LocationDTO.java)).
 3. Generate insert sql script for specified table ([Location](/src/main/java/io/github/tkaczenko/koatuuparser/entity/tables/Location.java))
 
-If you want to change the algorithm of parsing, check this [KoatuuParser](/src/main/java/io/github/tkaczenko/koatuuparser/service/local/KoatuuParser.java))
+If you want to change the algorithm of parsing, check this [KoatuuParser](/src/main/java/io/github/tkaczenko/koatuuparser/service/local/KoatuuParser.java)
 
 If you want to generate custom insert sql script for your specific database schema, just look at [LocationWriter](/src/main/java/io/github/tkaczenko/koatuuparser/service/local/LocationWriter.java).
 
